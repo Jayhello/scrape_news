@@ -2,7 +2,11 @@
 #restart scrape news process if the process exited accidentally
 
 log_file="restart_sh.log"
-TIMESTAMP=`date "+%Y-%m-%d %H:%M:%S"`
+
+# return the current date time
+TIMESTAMP(){
+    echo $(date "+%Y-%m-%d %H:%M:%S")
+}
 
 stop_process_if_running(){
 	# $1->process_name to grep
@@ -10,14 +14,14 @@ stop_process_if_running(){
 	be_running=$(ps -ef | grep $1 | wc -l)
 	if [ $be_running -gt 0 ]
 	then
-		echo "$TIMESTAMP $1 is running, T'm going to kill it"
+		echo "$(TIMESTAMP) $1 is running, T'm going to kill it"
 		ps -ef | grep "$1" | awk '{print $2}' | xargs kill -9
 		if [ $? -eq 0 ];
 		then
 			echo "kill $1 successfully!!!"
 		fi
 	else
-		echo "$TIMESTAMP $1 is not running"
+		echo "$(TIMESTAMP) $1 is not running"
 	fi
 }
 
@@ -28,17 +32,17 @@ restart_process_if_die(){
 	be_running=$(ps -ef | grep $1 | wc -l)
 	if [ $be_running -eq 0 ];
 	then
-		echo "$TIMESTAMP $3 got down, now I will restart it" | tee -a $log_file
+		echo "$(TIMESTAMP) $3 got down, now I will restart it" | tee -a $log_file
 		cd $2
 		echo "Now I am in $PWD"
 		nohup python $3 & 2>&1
 		if [ $? -eq 0 ];
 		then
-			echo "$TIMESTAMP $3 restart successfully" | tee -a $log_file
+			echo "$(TIMESTAMP) $3 restart successfully" | tee -a $log_file
 		fi
 		cd -
 	else
-		echo "$TIMESTAMP $3 is running, no need to restart"
+		echo "$(TIMESTAMP) $3 is running, no need to restart"
 	fi
 }
 
@@ -52,6 +56,6 @@ stop_process_if_running $test_process
 while :
 do
 	restart_process_if_die $test_process $file_dir $py_file
-	echo "$TIMESTAMP now I will sleep 10S"
+	echo "$(TIMESTAMP) now I will sleep 10S"
 	sleep 10
 done
