@@ -1,0 +1,6 @@
+{
+  "mailfrom":"mail-server@xxx.com", "smtphost":"mail.xxx.com",
+  "smtpuser":"name-xxx@xxx.com",
+  "smtppass":"yours pass word","to":"xiongyu@xxx.com",
+  "subject":"scrapy web error","smtpport":25
+}

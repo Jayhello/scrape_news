@@ -1,0 +1,5 @@
+{
+  "host":"your's ip","user":"user_name","pwd":"password",
+  "db":"database","tb_common":"tb_scrape_yy","port":8066,
+  "tb_yynews":"tb_ck_hot_news"
+}

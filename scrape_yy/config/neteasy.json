@@ -1,0 +1,14 @@
+{
+     "xpath":
+       {
+       "article":"//*[@class=\"tabContents active\"]//td[@class=\"red\"]",
+       "xpath_title":"a/text()",
+"xpath_url":"a/@href",
+"xpath_time":""
+}
+,
+"url":"http://news.163.com/rank/",
+"name":"neteasy",
+  "webname":"网易",
+  "webtype":"news"
+}

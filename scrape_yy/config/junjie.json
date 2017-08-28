@@ -1,0 +1,14 @@
+{
+  "xpath":
+  {
+    "article":"//div[@class=\"lann\"]/ul/li",
+    "xpath_title":"a/text()",
+    "xpath_url":"a/@href",
+    "xpath_time":"span//text()"
+  }
+,
+  "url":"http://www.junjiewang.com/hulianwang/",
+  "name":"junjie",
+  "webname":"俊杰网",
+  "webtype":"news"
+}

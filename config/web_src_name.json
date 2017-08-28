@@ -1,0 +1,106 @@
+{
+    "ali_hotnews": [
+        "游侠网", 
+        "forum", 
+        "http://www.ali213.net/news/hotnews/"
+    ], 
+    "cac_gov": [
+        "中国网信网", 
+        "gov", 
+        "http://www.cac.gov.cn/wlcb.htm"
+    ], 
+    "ccm_gov": [
+        "中国文化市场网", 
+        "gov", 
+        "http://ccm.gov.cn/swordcms/publish/default/static/zhyw/index.htm"
+    ], 
+    "china_social": [
+        "中华新闻网", 
+        "news", 
+        "http://news.china.com/social/"
+    ], 
+    "china_z": [
+        "站长之家", 
+        "forum", 
+        "http://www.chinaz.com/news/roll/"
+    ], 
+    "east_society": [
+        "东方网", 
+        "news", 
+        "http://news.eastday.com/eastday/13news/auto/news/society/index_K33.html"
+    ], 
+    "huanqiu_society": [
+        "环球网", 
+        "news", 
+        "http://society.huanqiu.com/article/"
+    ], 
+    "jun_jie": [
+        "俊杰网", 
+        "news", 
+        "http://www.junjiewang.com/hulianwang/"
+    ], 
+    "myzaker": [
+        "myzaker", 
+        "forum", 
+        "http://www.myzaker.com/"
+    ], 
+    "neteasy": [
+        "网易", 
+        "news"
+    ], 
+    "news173": [
+        "news173", 
+        "news", 
+        "http://news.17173.com/sh/index.shtml"
+    ], 
+    "shdf": [
+        "中国扫黄扫非网", 
+        "gov", 
+        "http://www.shdf.gov.cn/shdf/channels/767.html"
+    ], 
+    "shxwcb": [
+        "新闻晨报", 
+        "newspaper", 
+        "http://www.shxwcb.com/"
+    ], 
+    "sina_hotnews": [
+        "新浪", 
+        "news", 
+        "http://news.sina.com.cn/hotnews/"
+    ], 
+    "sina_pic": [
+        "新浪", 
+        "news", 
+        "http://slide.news.sina.com.cn/s/"
+    ], 
+    "sina_society": [
+        "新浪", 
+        "news", 
+        "http://news.sina.com.cn/society/"
+    ], 
+    "sina_tech": [
+        "新浪", 
+        "news", 
+        "http://tech.sina.com.cn/internet/"
+    ], 
+    "sohush": [
+        "搜狐", 
+        "news", 
+        "http://news.sohu.com/shehuixinwen.shtml"
+    ], 
+    "southcn_it": [
+        "搜狐", 
+        "news", 
+        "http://it.southcn.com/"
+    ], 
+    "taiwan_sh": [
+        "中国台湾网", 
+        "news", 
+        "http://www.taiwan.cn/xwzx/dl/shh/index.htm"
+    ], 
+    "tencentgame": [
+        "腾讯网", 
+        "news", 
+        "http://games.qq.com/l/news.htm"
+    ]
+}

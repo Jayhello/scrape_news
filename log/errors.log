@@ -1,0 +1,28 @@
+2017-08-28 12:19:38 - twisted - CRITICAL - Unhandled error in Deferred:
+2017-08-28 12:19:38 - twisted - CRITICAL - 
+Traceback (most recent call last):
+  File "D:\Anaconda2\lib\site-packages\twisted\internet\defer.py", line 1299, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\Anaconda2\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "D:\Anaconda2\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "D:\Anaconda2\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "D:\Anaconda2\lib\site-packages\scrapy\core\engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "D:\Anaconda2\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "D:\Anaconda2\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "D:\Anaconda2\lib\site-packages\scrapy\middleware.py", line 40, in from_settings
+    mw = mwcls()
+  File "E:\python_code\python_github\scrape_news\scrape_yy\pipelines.py", line 23, in __init__
+    self.config_db()
+  File "E:\python_code\python_github\scrape_news\scrape_yy\pipelines.py", line 82, in config_db
+    self.conn = MySQLdb.connect(host=host, port=port, user=user, passwd=pwd, db=db, charset="utf8", use_unicode=True)
+  File "D:\Anaconda2\lib\site-packages\MySQLdb\__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\Anaconda2\lib\site-packages\MySQLdb\connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2005, "Unknown MySQL server host 'your's ip' (0)")

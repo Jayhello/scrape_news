@@ -1,0 +1,7 @@
+{
+  "host":"113.106.100.94","user":"detect_dev","pwd":"detect123!@#",
+  "db":"detect","port":6898,
+  "tb_yynews":"tb_ck_hot_news",
+  "tb_common":"tb_scrape_yy",
+  "tb_keyword":"tb_ck_keyword"
+}
